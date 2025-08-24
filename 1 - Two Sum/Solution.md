@@ -27,7 +27,8 @@
             )
 
 ### Main algorithm: O(n) for time, O(1) for space
-```for (i = 0 to len(arr)) {
+```
+for (i = 0 to len(arr)) {
     leftover = target - arr[i]
     if (set.contains(leftover)) {
         if (leftover == arr[i] && count.get(arr[i]) >= 2) {
@@ -42,4 +43,6 @@
     }
 
     return NULL //shouldn't happen if problem input is valid
-}```
+}
+
+```
