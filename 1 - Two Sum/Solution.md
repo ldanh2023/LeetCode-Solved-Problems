@@ -10,6 +10,7 @@
 ### Setup
 1. Add all elements to Set: O(n) both time and space
 2. Add all elements and their count/frequency to HashMap "count": O(n) both time and space
+    ```
     eg. HashMap(1: 2,
                 2: 1,
                 3: 1,
@@ -17,7 +18,9 @@
                 .
                 .
             )
+    ```
 3. Add all elements with list of indices to HashMap "indices": O(n) both time and space
+    ```
     eg. HashMap(1: [0, 1],
                 2: [3],
                 3: [2],
@@ -25,8 +28,10 @@
                 .
                 .
             )
+    ```
 
 ### Main algorithm: O(n) for time, O(1) for space
+
 ```
 for (i = 0 to len(arr)) {
     leftover = target - arr[i]
@@ -44,5 +49,4 @@ for (i = 0 to len(arr)) {
 
     return NULL //shouldn't happen if problem input is valid
 }
-
 ```
