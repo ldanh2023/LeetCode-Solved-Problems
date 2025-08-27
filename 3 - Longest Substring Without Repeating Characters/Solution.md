@@ -5,10 +5,10 @@
 **Explanation:**
 
 Right slider loops from beginning to end trying to find the longest substring
-    - If right slider lands on character that is already in substring, iterate the left slider all the way until the character is gone
-        - Character could be the first character or it could be in middle, therefore left slider may or may not be on its index
-            - Therefore have a while loop to shift the left slider until the repeated character is gone
-    - Each iteration of right slider, calculate the new length of the substring and set it to be the max if it's larger than the current max
+- If right slider lands on character that is already in substring, iterate the left slider all the way until the character is gone
+- Character could be the first character or it could be in middle, therefore left slider may or may not be on its index
+- Therefore have a while loop to shift the left slider until the repeated character is gone
+- Each iteration of right slider, calculate the new length of the substring and set it to be the max if it's larger than the current max
 
 ```
 //Efficent approach: O(n), slider approach, left and right pointer
